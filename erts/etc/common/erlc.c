@@ -28,6 +28,7 @@
 #include <winbase.h>
 /* FIXE ME config_win32.h? */
 #define HAVE_STRERROR 1
+#define snprintf _snprintf
 #endif
 
 #include <ctype.h>
