@@ -491,15 +491,6 @@ false</pre>
       </desc>
     </func>
     <func>
-      <name>concat_binary(ListOfBinaries)</name>
-      <fsummary>Concatenate a list of binaries (deprecated)</fsummary>
-      <desc>
-        <p>Do not use; use
-          <seealso marker="#list_to_binary/1">list_to_binary/1</seealso>
-          instead.</p>
-      </desc>
-    </func>
-    <func>
       <name>crc32(Data) -> int()</name>
       <fsummary>Compute crc32 (IEEE 802.3) checksum</fsummary>
       <type>
