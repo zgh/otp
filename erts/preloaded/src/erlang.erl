@@ -40,8 +40,6 @@
 
 -export([nodes/0]).
 
--export([concat_binary/1]).
-
 -export([list_to_integer/2,integer_to_list/2]).
 
 -export([flush_monitor_message/2]).
@@ -51,7 +49,6 @@
 -export([await_proc_exit/3]).
 
 -deprecated([hash/2]).
--deprecated([concat_binary/1]).
 
 -compile(nowarn_bif_clash).
 
@@ -426,9 +423,6 @@ set_cookie(Node, C) when Node =/= nonode@nohost, is_atom(Node) ->
 	    
 get_cookie() ->
     auth:get_cookie().
-
-concat_binary(List) ->
-    list_to_binary(List).
 
 integer_to_list(I, 10) ->
     erlang:integer_to_list(I);
