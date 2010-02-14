@@ -1026,7 +1026,7 @@ makedep_output(#compile{code=Code,options=Opts,ofile=Ofile}=St) ->
 	_ when is_list(Output0) ->
 	    case file:delete(Output0) of
 		Ret2 when Ret2==ok; Ret2=={error,enoent} ->
-		    case file:open(Output0, write) of
+		    case file:open(Output0, [write]) of
 			{ok,IODev} ->
 			    {ok,IODev,true};
 			{error,Reason2} ->
